@@ -19,15 +19,15 @@ python app.py
 5. Access Application
 Open: http://localhost:5000
 
-Login Portals
-Donor: http://localhost:5000/donor-login
-Admin: http://localhost:5000/ngo-admin-dashboard
-Accountant: http://localhost:5000/ngo-accountant-dashboard
 
 Database Config
+
 Host: localhost
+
 Database: fund_donation_db
+
 Username: root
+
 Password: (none)
 
 
