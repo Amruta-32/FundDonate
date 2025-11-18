@@ -3,7 +3,7 @@
 ## Installation Steps
 
 1. Clone Repository
-git clone https://github.com/your-username/FundDonate.git
+git clone https://github.com/Amruta-32/FundDonate
 cd FundDonate
 
 2. Install Dependencies
