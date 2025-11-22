@@ -20,8 +20,8 @@ app.secret_key = 'funddonate_secret_key_2023'
 
 # MySQL Configuration for XAMPP
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_USER'] = 'funduser'
+app.config['MYSQL_PASSWORD'] = 'StrongPassword123!'
 app.config['MYSQL_DB'] = 'fund_donation_db'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 
