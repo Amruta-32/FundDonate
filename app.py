@@ -1,8 +1,9 @@
 import re
+import pymysql
+pymysql.install_as_MySQLdb()
+
 from io import BytesIO
 from sched import scheduler
-import MySQLdb
-import MySQLdb.cursors
 from flask import Flask, render_template, request, session, json
 from flask import flash, redirect, url_for
 from flask import send_file
@@ -13,7 +14,7 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import landscape, A4
 from reportlab.pdfgen import canvas
 from datetime import datetime, timedelta
-from reportlab.lib import colors
+import os
 app = Flask(__name__)
 app.secret_key = 'funddonate_secret_key_2023'
 
@@ -2047,4 +2048,4 @@ def generate_consolidated_pdf(consolidated_data, month_name):
                      download_name=f"consolidated_report_{month_name.replace(' ', '_')}.pdf",
                      mimetype='application/pdf')
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5000)
